@@ -63,7 +63,7 @@ def main():
         st.subheader('Prediction Results:')
         st.write(f'**Final Temperature (Celsius):** {predicted_temp_C:.2f}')
         st.write(f'**Pressure (Pa):** {predicted_pressure:.2f}')
-        st.write(f'**Energy Consumed (Joules):** {calculate_energy(initial_temp_K, predicted_temp_K):.2f}')
+        st.write(f'**Energy Conserved (Joules):** {calculate_energy(initial_temp_K, predicted_temp_K):.2f}')
 
     if st.checkbox('Show Raw Data'):
         st.subheader('Raw Data')
